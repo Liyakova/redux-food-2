@@ -11,3 +11,108 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  display: flex;
+  justify-content: space-around;
+}
+
+body {
+  background-color: #161616
+}
+
+.block {
+  background-color: rgba(255, 255, 255, 0.36);
+  padding: 20px;
+}
+
+.cartIcon {
+  width: 60px;
+}
+
+.categoryButton:hover {
+  background-color: #fdeb6b;
+}
+
+.categoryButtonSelected {
+  background-color: green;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+}
+
+.categoryButton {
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+}
+
+p, h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.headline {
+  margin-bottom: 20px;
+  color: #fdeb6b;
+  font-size: 20px;
+}
+
+button {
+  background-color: #fdeb6b;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  padding: 7px;
+  border: none
+}
+
+.price {
+  font-weight: bold;
+  font-size: 19px;
+  margin-top: 0;
+}
+
+.btnQuantity {
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.pic {
+  margin-top: 20px;
+}
+
+.dishInCart {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+hr {
+  background-color: #161616;
+  width: 200px;
+}
+
+.pCart {
+  margin: 4px;
+  color: rgb(227, 226, 226);
+}
+
+h2 {
+  color: rgb(1, 34, 1);
+  margin-bottom: 5px;
+}
+
+.total {
+  color: #fdeb6b;
+}
+
+@media all and (max-width: 500px) {
+  .App {
+    flex-direction: column;
+  }
+  .pic {
+    width: 80%;
+  }
+}
